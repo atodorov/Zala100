@@ -1,0 +1,15 @@
+{include file="header.html"}
+
+<h2>Новини</h2>
+{foreach from=$news item=new}
+<div class="article noh">
+<h3>{$new.Title} </h3>
+<span class="property_label">{$new.Time}</span>
+
+<p class="news_article">{$new.Text|truncate:500} <a href = "articles.php?id={$new.id}">Чети повече</a></p>
+</div>
+{/foreach}
+{include file="pagination.html"}
+ </div>
+{include file="sidebar.html"}
+{include file="footer.html"}

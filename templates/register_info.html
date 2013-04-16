@@ -1,0 +1,9 @@
+{include file="header.html"} 
+
+{if isset($successful)}
+	<h2 style="color:green">{$successful}</h2>
+{/if}
+{if isset($error)}
+	<h2 style="color:red">{$error}</h2>
+{/if}
+{include file="footer.html"} 

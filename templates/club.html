@@ -1,0 +1,37 @@
+{include file="header.html"}
+
+
+	<div class="article">
+		<img src="{$club.image}"/>
+		<h3>{$club.Name}</h3>
+		
+		<span class="property_label">Членове</span>  <span class="property_value">{$club.MembersCount}</span>
+		<span class="property_label">Председател</span>  <span class="property_value">{$club.ClubAdmin}</span>
+		<h4>{$club.Description}</h4>
+	</div>
+{if $UserLogedIn}
+	<a href="">Включи ме</a><br/>
+	
+	<span class="property_label">Членове</span>
+	<br/>
+	{foreach from=$members item=member}
+		<div class="article noh">
+			<span class="property_value">- {$member.First_Name}  {$member.Last_Name}</span>
+		</div>
+	{/foreach}
+
+	<span class="property_label">Дейности</span>
+	<br/>
+	{foreach from=$news item=news_item}
+		<div class="article noh">
+			<h4>{$news_item.Description}</h4>
+			<a href="articles.php?id={$news_item.id}" class="read_more">{$news_item.Text}</a>
+		</div>
+	{/foreach}
+
+{else}
+ 
+{/if}
+</div>
+{include file="sidebar.html"} 
+{include file="footer.html"}

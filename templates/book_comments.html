@@ -1,0 +1,29 @@
+<div id="comments">
+{if $comments|@count gt 0}
+{foreach from=$comments item=comment}
+<div class="comment">
+		{$comment.Comment_Text}
+		<br/>
+		<span> от {$comment.First_Name} {$comment.Last_Name}</span>
+</div>
+{/foreach}
+{if $cmts ne "all"}
+	<a href="book.php?id={$book.id}&cmts=all"> Прегледай всички </a>
+{/if}
+{else}
+<p> Все още няма коментари за тази книга!</p>
+{/if}
+{if $UserLogedIn}
+<p> Споделете вашето мнение </p>
+<form action="" method="post">
+	<p>{$message}</p>
+	<textarea name="comment" require></textarea>
+	
+	<input type="hidden" name="uid" value="{$UserID}"/>
+	<img src="/helpers/captcha.php" />
+	<label for="captcha"> Знаеш какво да правиш </label>
+	<input type="text" name="captcha" require/>
+	<input type="submit" name="submit" value="Коментирай"/>
+</form>
+{/if}
+</div>

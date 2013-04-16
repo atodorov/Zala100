@@ -1,0 +1,40 @@
+{include file="header.html"}
+
+	{if $script eq "books"}
+	<div id="by">
+		{if $by ne "rating"}
+			<a href="books.php?by=rating"> Най-популярните </a>
+		{/if}
+		{if $by ne "date"}
+			<a href="books.php?by=date"> Най-новите </a>
+		{/if}
+		{if $by ne "available"}
+			<a href="books.php?by=available"> Само наличните </a>
+		{/if}
+		<br/>
+	</div>
+	{/if}
+
+	{if isset($message)}
+	<h2>{$message}</h2>
+	{/if}
+	{if $books|@count gt 0}
+	
+		{foreach from=$books item=book}
+			<div class="article">
+				<img src="{$book.image}"/>
+				<h3>{$book.Name}</h3>
+				<h4>{$book.Author}</h4>
+				<span class="property_label">Рейтинг</span>  <span class="property_value">{$book.realRating|number_format:2:".":","}</span> от <span class="property_all">10</span>
+				<span class="availability available">Има в наличност</span>
+				<h4>{$club.Description}</h4>
+				<a href="book.php?id={$book.id}" class="read_more">Прочети още...</a>
+			</div>
+		{/foreach}
+		
+	{/if}
+
+{include file="pagination.html"}
+</div>
+{include file="sidebar.html"} 
+{include file="footer.html"} 

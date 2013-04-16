@@ -1,0 +1,37 @@
+{if $all_pages gt 1}
+<br class="clear" />
+<div id="pagination">
+	{if $page ne 1 }
+	
+	 <span> <a href="{$script}.php?page={$page-1}{if $script eq "books"}&by={$by}{/if}{if $script eq "search"}&q={$query}{/if}">&lt;&lt; Prev </a></span>
+	||
+	<a href="{$script}.php?page=1{if $script eq "books"}&by={$by}{/if}{if $script eq "search"}&q={$query}{/if}"> 1 </a> |
+	
+	{/if}
+	{if $page gt 2 }
+	<a href="{$script}.php?page=2{if $script eq "books"}&by={$by}{/if}{if $script eq "search"}&q={$query}{/if}"> 2 </a> |
+	... 
+	{if $page ne 3}
+		<a href="{$script}.php?page={$page-1}{if $script eq "books"}&by={$by}{/if}{if $script eq "search"}&q={$query}{/if}" > {$page-1} </a> | 
+	{/if}
+	{/if}
+	
+	{$page}
+	
+	{if $page lt $all_pages-1}
+		 | <a href="{$script}.php?page={$page+1}{if $script eq "books"}&by={$by}{/if}{if $script eq "search"}&q={$query}{/if}"> {$page+1}</a>
+	{/if}
+	
+	{if $page lt $all_pages-2}
+	 | ...<a href="{$script}.php?page={$all_pages-1}{if $script eq "books"}&by={$by}{/if}{if $script eq "search"}&q={$query}{/if}">{$all_pages-1}</a>
+	
+	{/if}
+	{if $page ne $all_pages}
+	| <a href="{$script}.php?page={$all_pages}{if $script eq "books"}&by={$by}{/if}{if $script eq "search"}&q={$query}{/if}">{$all_pages}</a>
+	||
+	 <span> <a href="{$script}.php?page={$page+1}{if $script eq "books"}&by={$by}{/if}{if $script eq "search"}&q={$query}{/if}">Next &gt;&gt;</a></span>
+	{/if}
+	
+</div>
+<br class="clear" />
+{/if}

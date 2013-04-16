@@ -1,0 +1,53 @@
+{include file="header.html"}
+
+
+	<div class="article">
+		<img src="{$book.image}"/>
+		<h3>{$book.Name}</h3>
+		<span class="property_label">Автор</span>  <span class="property_value">{$book.Author}</span><br/>
+		<span class="property_label">Тип</span>  <span class="property_value">{$book.Cat_Name}</span><br/>
+		<span class="property_label">Език</span>  <span class="property_value">{$book.Lang}</span><br/>
+		<span class="property_label">Рейтинг</span>  <span class="property_value">{$book.realRating|number_format:2:".":","}</span> от <span class="property_all">10</span><br/>
+		<span class="availability available">Има в наличност</span>
+	</div>
+{if $UserLogedIn}
+
+<div id="rate">
+	<span class="r_1">1</span> | 
+	<span class="r_2">2</span> |
+	<span class="r_3">3</span> |
+	<span class="r_4">4</span> |
+	<span class="r_5">5</span> |
+    <span class="r_6">6</span> |
+	<span class="r_7">7</span> |
+	<span class="r_8">8</span> |
+	<span class="r_9">9</span> |
+	<span class="r_10">10</span> |
+</div>
+
+<script type="text/javascript">
+{literal} 
+$(document).ready(function(){
+	$('[class^="r_"]').click(function(){
+		rated = $(this).attr('class').split('_');
+		rated = rated[1];
+		$.ajax({
+			  type: "POST",
+			  url: "helpers/rating.php",
+			  data: { bid: {/literal} {$book.id} {literal}, rating: rated, uid: {/literal} {$UserID} {literal} }
+			}).done(function( msg ) {
+			  alert( "rated : " + msg );
+			});
+	});
+});
+{/literal} 
+</script>
+
+{else}
+ Само логнати потребители, могат да гласуват.
+{/if}
+
+{include file="book_comments.html"}
+</div>
+{include file="sidebar.html"} 
+{include file="footer.html"} 

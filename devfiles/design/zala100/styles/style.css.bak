@@ -1,0 +1,1003 @@
+/*
+Template Name: BusinessToday
+File: Layout CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+@import url(navi.css);
+@import url(forms.css);
+@import url(tables.css);
+
+body{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-family:verdana, Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	background-color:#29313C;
+	}
+
+img{border:0; display:block; padding:0; margin:0;}
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart {list-style-type:none; margin:0; padding:0;}
+.clear{clear: both;}
+br.clear{clear:both; margin-top:-15px;}
+a{outline:none; text-decoration:none;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+.imgl, .imgr{border:1px solid #DFDFDF; padding:5px; color:#666666; background-color:#FFFFFF;}
+.imgl{float:left; margin:0 8px 8px 0; clear:left;}
+.imgr{float:right; margin:0 0 8px 8px; clear:right;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{
+	display:block;
+	width:100%;
+	margin:0;
+	text-align:left;
+	}
+
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{
+	margin:0 0 20px 0;
+	padding:0 0 8px 0;
+	font-size:20px;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	border-bottom:1px dotted #DDDDDD;
+	}
+
+.col1{color:#666666; background: url(../images/banner.jpg) center no-repeat #000;}
+.col2{color:#FFFFFF; background-color:#000000;}
+.col3, .col4, .col5{color:#666666; background-color:#FFFFFF;}
+.col6{color:#999999; background-color:#F3F3F3;}
+.col6 a{color:#2684B7; background-color:#F3F3F3;}
+.col7, .col7 a{color:#FFFFFF; background-color:#29313C;}
+
+/* ----------------------------------------------Generalise-------------------------------------*/
+
+#header, #topbar, #intro, #services, #breadcrumb, #container, #footer, #copyright{
+	position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:960px;
+	}
+
+/* ----------------------------------------------Header-------------------------------------*/
+
+#header{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	height: 123px;
+	}
+
+#header #logo{
+	display:block;
+	float:left;
+	width:344px;
+	height: 119px;
+	}
+
+#header #logo h1, #header #logo p{
+	margin:0;
+	padding:0;
+	line-height:normal;
+	}
+	
+#header #logo h1{
+	margin:0 0 10px 0;
+	padding:0;
+	font-size:36px;
+	border:none;
+	}
+
+#header h1 a{
+	color:#3A6C86;
+	background-color:#E3F1F9;
+	}
+
+#header #newsletter{
+	float:right;
+	padding:20px 0 0;
+	color:#000000;
+	}
+
+/* ----------------------------------------------Topbar-------------------------------------*/
+
+#topbar{
+	z-index:1000;
+	}
+
+#topbar #search{
+	display:block;
+	float:right;
+	width:242px;
+	height:36px;
+	margin:0;
+	padding:10px 0 0 17px;
+	color:#FFFFFF;
+	background-color:#000000;
+	border-left:1px dotted #666666;
+	overflow:hidden;
+	}
+
+/* ---------------------------------------------- Books Search-------------------------------------*/
+
+#book_search {
+	width: 100%;
+	float: left;
+	clear: both;
+	height: 60px;
+}
+
+#book_search input {
+	border: 2px solid #0098ca;
+	width: 380px;
+	padding: 5px;
+	line-height: 20px;
+	color: #0098ca
+}
+
+#book_search button {
+	background-color: #0098ca;
+	border: 0 none;
+	padding: 5px 15px;
+	line-height: 20px;
+	color: #fff;
+	font-weight: bold;
+	
+}
+
+#topbar #search{
+	display:block;
+	float:right;
+	width:242px;
+	height:36px;
+	margin:0;
+	padding:10px 0 0 17px;
+	color:#FFFFFF;
+	background-color:#000000;
+	border-left:1px dotted #666666;
+	overflow:hidden;
+	}
+
+
+/* ----------------------------------------------Homepage Intro-------------------------------------*/
+
+#intro{
+	padding:30px 0 5px 0;
+	font-size:16px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	}
+
+#intro .fl_left{
+	display:block;
+	float:left;
+	width:515px;
+	height:240px;
+	margin:0;
+	padding:30px;
+	color:#FFFFFF;
+	background-color:#2684B7;
+	}
+
+#intro .fl_left h2{
+	font-size:46px;
+	margin:0 0 15px 0;
+	padding:0;
+	border:none;
+	color:#FFFFFF;
+	background-color:#2684B7;
+	}
+
+#intro .fl_left p{
+	margin:0;
+	padding:0;
+	line-height:1.6em;
+	}
+
+#intro .fl_left p.readmore{
+	display:block;
+	width:100%;
+	margin:20px 0 0 0;
+	padding:0;
+	text-align:right;
+	line-height:normal;
+	}
+
+#intro .fl_left p.readmore a{
+	padding:8px 15px;
+	font-size:18px;
+	color:#FFFFFF;
+	background-color:#1C5E82;
+	}
+
+#intro .fl_right{float:right;}
+
+/* ----------------------------------------------Services-------------------------------------*/
+
+#services ul, #services p, #services h2, #services img{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+
+#services li{
+	display:block;
+	float:left;
+	width:294px;
+	height:180px;
+	margin:0 9px 0 0;
+	padding:10px;
+	color:#666666;
+	background-color:#EFEFEF;
+	}
+
+#services li:hover, #services li:hover h2{
+	color:#666666;
+	background-color:#E5E5E5;
+	}
+
+#services li.last{
+	margin-right:0;
+	}
+
+#services .fl_right{
+	display:block;
+	float:right;
+	width:185px;
+	padding:10px 0 0 0;
+	}
+
+#services h2{
+	margin:0 0 5px 0;
+	padding:0 0 3px 0;
+	font-size:14px;
+	font-weight:bold;
+	color:#666666;
+	background-color:#EFEFEF;
+	border-bottom-color:#666666;
+	}
+
+#services p{
+	margin:0;
+	padding:0;
+	line-height:1.6em;
+	}
+
+#services p.readmore{
+	display:block;
+	width:100%;
+	margin:15px 0 0 0;
+	padding:0;
+	text-align:right;
+	line-height:normal;
+	}
+
+#services p.readmore a{
+	padding:8px 15px;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#666666;
+	}
+
+/* ----------------------------------------------BreadCrumb-------------------------------------*/
+
+#breadcrumb{
+	padding:30px 0;
+	border-bottom:1px solid #CCCCCC;
+	}
+
+#breadcrumb a{
+	color:#2684B7;
+	background-color:#FFFFFF;
+	}
+
+#breadcrumb ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+
+#breadcrumb ul li{display:inline;}
+#breadcrumb ul li.current a{text-decoration:underline;}
+
+/* ----------------------------------------------Content-------------------------------------*/
+
+#container{
+	padding:30px 0;
+	line-height:1.4em;
+	min-height: 350px;
+	}
+
+#container a{
+	color:#2684B7;
+	background-color:#FFFFFF;
+	}
+
+#container h1, #container h2, #container h3, #container h4, #container h5, #container h6{
+	padding-bottom:8px;
+	border-bottom:1px dotted #CCCCCC;
+	}
+
+#content{
+	display:block;
+	float:left;
+	width:640px;
+	}
+
+/* ------Comments-----*/
+
+#comments{margin-bottom:40px;}
+
+#comments .commentlist {margin:0; padding:0;}
+
+#comments .commentlist ul{margin:0; padding:0; list-style:none;}
+
+#comments .commentlist li.comment_odd, #comments .commentlist li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
+
+#comments .commentlist li.comment_odd{color:#666666; background-color:#FFFFFF;}
+#comments .commentlist li.comment_odd a{color:#3E7060; background-color:#FFFFFF;}
+
+#comments .commentlist li.comment_even{color:#666666; background-color:#E8E8E8;}
+#comments .commentlist li.comment_even a{color:#3E7060; background-color:#E8E8E8;}
+
+#comments .commentlist .author .name{font-weight:bold;}
+#comments .commentlist .submitdate{font-size:smaller;}
+
+#comments .commentlist p{margin:10px 5px 10px 0; padding:0; font-weight: normal;text-transform: none;}
+
+#comments .commentlist li .avatar{float:right; border:1px solid #EEEEEE; margin:0 0 0 10px;}
+
+/* ----------------------------------------------Column-------------------------------------*/
+
+#column{
+	display:block;
+	float:right;
+	width:300px;
+	}
+
+.flickrbox ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+	
+.flickrbox li{
+	display:block;
+	float:left;
+	width:80px;
+	height:80px;
+	margin:0 15px 15px 0;
+	padding:4px;
+	color:#666666;
+	background-color:#FFFFFF;
+	border:1px solid #CCCCCC;
+	}
+
+.flickrbox li.last{margin-right:0;}
+
+#column .holder, #column #featured{
+	display:block;
+	width:300px;
+	margin-bottom:20px;
+	}
+
+#column .holder h2.title{
+	display:block;
+	width:100%;
+	height:65px;
+	margin:0;
+	padding:15px 0 0 0;
+	font-size:20px;
+	line-height:normal;
+	border-bottom:1px dashed #666666;
+	}
+
+#column .holder h2.title img{
+	float:left;
+	margin:-15px 8px 0 0;
+	padding:5px;
+	border:1px solid #666666;
+	}
+
+#column div.imgholder{
+	display:block;
+	width:290px;
+	margin:0 0 10px 0;
+	padding:4px;
+	color:#666666;
+	background-color:#FFFFFF;
+	border:1px solid #CCCCCC;
+	}
+
+#column .holder p.readmore{
+	display:block;
+	width:100%;
+	font-weight:bold;
+	text-align:right;
+	line-height:normal;
+	}
+	
+/* Featured Block */
+
+#column #featured a{
+	color:#666666;
+	background-color:#F9F9F9;
+	}
+
+#column #featured ul, #column #featured h2, #column #featured p{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+
+#column #featured a{
+	color:#2684B7;
+	background-color:#F9F9F9;
+	}
+
+#column #featured li{
+	display:block;
+	width:250px;
+	margin:0;
+	padding:20px 25px;
+	color:#666666;
+	background-color:#F9F9F9;
+	}
+
+#column #featured li p.imgholder{
+	display:block;
+	width:240px;
+	height:90px;
+	margin:20px 0 15px 0;
+	padding:4px;
+	border:1px solid #CCCCCC;
+	}
+
+#column #featured li h2{
+	margin:0;
+	padding:0 0 14px 0;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	line-height:normal;
+	border-bottom:1px dashed #666666;
+	}
+
+#column #featured p.readmore{
+	display:block;
+	width:100%;
+	margin-top:15px;
+	font-weight:bold;
+	text-align:right;
+	line-height:normal;
+	}
+
+#column #latestnews{
+	display:block;
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+
+#column #latestnews li{
+	display:block;
+	margin:0 0 20px 0;
+	padding:0 0 15px 0;
+	border-bottom:1px dotted #DDDDDD;
+	}
+
+#column #latestnews li.last{
+	margin-bottom:0;
+	}
+
+#column #latestnews p{
+	margin:0;
+	padding:0;
+	line-height:normal;
+	}
+
+#column #latestnews .imgl{
+	margin:0 10px 10px 0;
+	padding:4px;
+	}
+
+/* ----------------------------------------------Footer-------------------------------------*/
+
+#footer{
+	padding:30px 0;
+	}
+
+#footer h2{
+	margin-bottom:10px;
+	border-bottom:1px dotted #999999;
+	}
+
+#footer p, #footer ul, #footer a{
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	list-style:none;
+	line-height:normal;
+	}
+
+#footer .footbox{
+	display:block;
+	float:right;
+	width:190px;
+	margin:0 0 0 30px;
+	padding:0;
+	}
+
+#footer li{
+	margin-bottom:3px;
+	line-height:1.6em;
+	}
+
+#footer .last{
+	margin:0;
+	}
+
+#login{
+	display:block;
+	float:left;
+	width:300px;
+	}
+
+/* ----------------------------------------------Copyright-------------------------------------*/
+
+#copyright{
+	padding:20px 0;
+	}
+
+#copyright p{
+	margin:0;
+	padding:0;
+	}
+
+#topnav{
+	display:block;
+	float:left;
+	width:660px;
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-size:13px;
+	font-weight:normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	background-color:#000000;
+	}
+
+#topnav ul, #topnav li{
+	float:left;
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+
+#topnav li a:link, #topnav li a:visited, #topnav li a:hover{
+	display:block;
+	margin:0;
+	padding:15px 20px;
+	color:#FFFFFF;
+	background-color:#000000;
+	}
+
+#topnav ul ul li a:link, #topnav ul ul li a:visited{
+	border:none;
+	}
+
+#topnav li.last a{
+	margin-right:0;
+	}
+
+#topnav li a:hover, #topnav ul li.active a{
+	color:#FFFFFF;
+	background-color:#059BD8;
+	}
+	
+#topnav li li a:link, #topnav li li a:visited{
+	width:150px;
+	float:none;
+	margin:0;
+	padding:7px 10px;
+	font-size:12px;
+	font-weight:normal;
+	color:#FFFFFF;
+	background-color:#000000;
+	}
+	
+#topnav li li a:hover{
+	color:#FFFFFF;
+	background-color:#059BD8;
+	}
+
+#topnav li ul{
+	background:#FFFFFF;
+	z-index:9999;
+	position:absolute;
+	left:-999em;
+	height:auto;
+	width:170px;
+	border-left:1px solid #FFFFFF;
+	border-bottom:1px solid #FFFFFF;
+	}
+
+#topnav li ul a{width:140px;}
+
+#topnav li ul ul{margin:-32px 0 0 0;}
+
+#topnav li:hover ul ul{left:-999em;}
+
+#topnav li:hover ul, #topnav li li:hover ul{left:auto;}
+
+#topnav li:hover{position:static;}
+
+#topnav li.last a{margin-right:0;}
+
+/* ----------------------------------------------Column Navigation-------------------------------------*/
+
+#column .subnav{display:block; width:250px; padding:25px; background-color:#F9F9F9; margin-bottom:30px;}
+
+#column .subnav h2{
+	margin:0 0 20px 0;
+	padding:0 0 14px 0;
+	font-size:20px;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#666666;
+	background-color:#F9F9F9;
+	line-height:normal;
+	border-bottom:1px dotted #666666;
+	}
+
+#column .subnav ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+
+#column .subnav li{
+	margin:0 0 3px 0;
+	padding:0;
+	}
+
+#column .subnav ul ul, #column .subnav ul ul ul, #column .subnav ul ul ul ul, #column .subnav ul ul ul ul ul{border-top:none; padding-top:0;}
+
+#column .subnav a{
+	display:block;
+	margin:0;
+	padding:5px 10px 5px 20px;
+	color:#777777;
+	background:url("../images/blue_file.gif") no-repeat 10px center #F9F9F9;
+	text-decoration:none;
+	border-bottom:1px dotted #666666;
+	}
+
+#column .subnav a:hover{color:#2684B7; background-color:#F9F9F9;}
+
+#column .subnav ul ul a, #column .subnav ul ul ul a, #column .subnav ul ul ul ul a, #column .subnav ul ul ul ul ul a{background:url("../images/black_file.gif") no-repeat #F9F9F9;}
+#column .subnav ul ul a{padding-left:40px; background-position:30px center;}
+#column .subnav ul ul ul a{padding-left:50px; background-position:40px center;}
+#column .subnav ul ul ul ul a{padding-left:60px; background-position:50px center;}
+#column .subnav ul ul ul ul ul a{padding-left:70px; background-position:60px center;}
+
+/*
+Template Name: BusinessToday
+File: Forms CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+
+/* ----------------------------------------------Newsletter Form-------------------------------------*/
+
+#header input{
+	display:block;
+	float:left;
+	width:155px;
+	margin:0 11px 0 0;
+	padding:5px;
+	color:#4C4C4C;
+	background-color:#FFFFFF;
+	border:1px solid #396B86;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+
+#header input#news_go{
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:4px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#FFFFFF;
+	background-color:#4D9FC7;
+	cursor:pointer;
+	}
+
+/* ----------------------------------------------Search Form-------------------------------------*/
+
+#topbar input{
+	display:block;
+	float:left;
+	width:155px;
+	margin:0 5px 0 0;
+	padding:5px;
+	color:#B6B6B6;
+	background-color:#525252;
+	border:1px solid #343434;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+
+#topbar input#go{
+	width:68px;
+	height:26px;
+	margin:0;
+	padding:4px 0;
+	text-transform:uppercase;
+	color:#FFFFFF;
+	background-color:#059BD8;
+	border-color:#396B86;
+	cursor:pointer;
+	font-weight:bold;
+	}
+
+/* ----------------------------------------------Forms in Content Area-------------------------------------*/
+
+#container #respond{display: block; width:100%;}
+
+#container #respond input{width:170px; padding:2px; border:1px solid #CCCCCC; margin:5px 5px 0 0;}
+
+#container #respond textarea{width:98%; border:1px solid #CCCCCC; padding:2px; overflow:auto;}
+	
+#container #respond p{margin:5px 0;}
+
+#container #respond #submit, #container #respond #reset{
+	margin:0;
+	padding:5px;
+	color:#666666;
+	background-color:#F7F7F7;
+	border:1px solid #CCCCCC;
+	cursor:pointer;
+	}
+
+/* ----------------------------------------------Newsletter-------------------------------------*/
+
+#footer form{
+	display:block;
+	width:300px;
+	margin:0;
+	padding:10px 0 0 0;
+	border:none;
+	}
+
+#footer input{
+	display:block;
+	width:218px;
+	margin:0 0 10px 0;
+	padding:5px;
+	color:#FFFFFF;
+	background-color:#2684B7;
+	border:1px solid #1C5E82;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+
+#footer input#login_go{
+	width:58px;
+	height:62px;
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:60px;
+	cursor:pointer;
+	}
+	
+/*
+Template Name: BusinessToday
+File: Forms CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+
+/* ----------------------------------------------Newsletter Form-------------------------------------*/
+
+#header input{
+	display:block;
+	float:left;
+	width:155px;
+	margin:0 11px 0 0;
+	padding:5px;
+	color:#4C4C4C;
+	background-color:#FFFFFF;
+	border:1px solid #396B86;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+
+#header input#news_go{
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:4px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#FFFFFF;
+	background-color:#4D9FC7;
+	cursor:pointer;
+	}
+
+/* ----------------------------------------------Search Form-------------------------------------*/
+
+#topbar input{
+	display:block;
+	float:left;
+	width:155px;
+	margin:0 5px 0 0;
+	padding:5px;
+	color:#B6B6B6;
+	background-color:#525252;
+	border:1px solid #343434;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+
+#topbar input#go{
+	width:68px;
+	height:26px;
+	margin:0;
+	padding:4px 0;
+	text-transform:uppercase;
+	color:#FFFFFF;
+	background-color:#059BD8;
+	border-color:#396B86;
+	cursor:pointer;
+	font-weight:bold;
+	}
+
+/* ----------------------------------------------Forms in Content Area-------------------------------------*/
+
+#container #respond{display: block; width:100%;}
+
+#container #respond input{width:170px; padding:2px; border:1px solid #CCCCCC; margin:5px 5px 0 0;}
+
+#container #respond textarea{width:98%; border:1px solid #CCCCCC; padding:2px; overflow:auto;}
+	
+#container #respond p{margin:5px 0;}
+
+#container #respond #submit, #container #respond #reset{
+	margin:0;
+	padding:5px;
+	color:#666666;
+	background-color:#F7F7F7;
+	border:1px solid #CCCCCC;
+	cursor:pointer;
+	}
+
+/* ---------------------------------------------- Articles -------------------------------------*/
+.article  {
+	margin-bottom: 30px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.article h3 {
+	color: #076FD6;
+	font-size: 15px!important;
+	font-weight: bold!important;
+	font-family: verdana, sans-serif!important;
+	border: 0 none!important;
+	margin: 0 0 10px !important;
+	padding: 0 !important;
+}
+
+.article h4 {
+	color: #000;
+	font-size: 13px!important;
+	font-weight: normal!important;
+	font-family: verdana, sans-serif!important;
+	border: 0 none!important;
+	margin: 0 0 10px !important;
+	padding: 0 !important;
+}
+
+.article p {
+	line-height: 18px;
+	vertical-align: middle;
+}
+
+.article img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.property_label {
+	font-weight: bold;
+	color: #E07830;
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+.property_label:after {
+	content:':';
+}
+
+.property_value {
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.article p {
+	color: #000;
+}
+
+.read_more {
+	font-size: 11px;
+	color: #726460!important;
+}
+
+.availability {
+	padding-left: 25px;
+	margin-left: 10px;
+	line-height: 18px;
+	vertical-align: middle;
+	display: inline-block;
+	background: url(../images/check_sprite.png)  no-repeat;
+}
+
+.availability.available { background-position: top left}
+.availability.not_available { background-position: bottom left;}
+
+/* ----------------------------------------------Newsletter-------------------------------------*/
+
+#footer form{
+	display:block;
+	width:300px;
+	margin:0;
+	padding:10px 0 0 0;
+	border:none;
+	}
+
+#footer input{
+	display:block;
+	width:218px;
+	margin:0 0 10px 0;
+	padding:5px;
+	color:#FFFFFF;
+	background-color:#2684B7;
+	border:1px solid #1C5E82;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	}
+
+#footer input#login_go{
+	width:58px;
+	height:62px;
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	text-transform:uppercase;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:60px;
+	cursor:pointer;
+	}

@@ -1,0 +1,34 @@
+     
+        <div id="column">
+          <div class="holder">
+          	
+          		{if $UserLogedIn}
+              <h2>  Здравей, {$UserFirstName}  </h2>
+               <ul id="latestnews">
+               	<li>
+                <a href="logout.php"> Излез </a>
+            	</li>
+            	</ul>
+            	{else}
+            	<h2><a href="register.php" > Регистрация </a> </h2>
+               {/if}
+            <h2>Предстоящи събития</h2>
+            <ul id="latestnews">
+              <li> 
+                <p><strong><a href="#">HackFMI v2</a></strong></p>
+                <p>Този път ще има бира!</p>
+              </li>
+               <li> 
+                <p><strong><a href="#">HideAndSeek</a></strong></p>
+                <p>Благо ще се крие, ние ще го търсим... Къде е Благо?</p>
+              </li>
+              <li class="last"> 
+                <p><strong><a href="#">Сбирка на клуба по Роботика.</a></strong></p>
+                <p>Ще си почистим новото помещение.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <br class="clear" />
+      </div>
+      <br class="clear" />

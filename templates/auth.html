@@ -1,0 +1,29 @@
+{include file="header.html"}
+{include file="sidebar.html"} 
+
+<div id = "content">
+	<div id = "authLeft">
+		{if isset($error)}
+			<p class="error">{$error}</p>
+		{/if}
+	<form action = "login.php" method = "post">
+		<p>
+			E-mail:<br />
+			<input type = "text" name = "email" required/>
+		</p>
+		<p>
+			Password:<br />
+			<input type = "password" name = "passwd" required/><br />
+			<input type = "submit" value = "Log in" />
+		</p>
+	</form>
+</div>
+
+<div id = "authRight">
+	<h3>Нямаш Профил?</h3>
+	<a href = "register.php">Регистрирай се !</a>
+</div>
+<div style = "clear: both;"></div>
+</div>
+
+{include file="footer.html"} 

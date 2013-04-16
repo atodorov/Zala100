@@ -1,0 +1,16 @@
+{include file="header.html"}
+
+{foreach from=$news item=new}
+<h2>{$new.Title} </h2>
+<div class="article noh">
+
+<span class="property_label">{$new.Time}</span>
+
+<p class="news_article">{$new.Text} </p>
+</div>
+
+{/foreach}
+</div>
+{include file="sidebar.html"}
+
+{include file="footer.html"}

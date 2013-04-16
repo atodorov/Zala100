@@ -1,0 +1,19 @@
+{include file="header.html"}
+
+		<h2>Нашите клубове</h2>
+	{foreach from=$clubs item=club}
+		<div class="article">
+			<img src="{$club.image}"/>
+			<h3>{$club.Name}</h3>
+			
+			<span class="property_label">Членове</span>  <span class="property_value">{$club.MembersCount}</span>
+			<span class="property_label">Председател</span>  <span class="property_value">{$club.ClubAdmin}</span>
+			<h4>{$club.Description}</h4>
+			<a href="club.php?id={$club.id}" class="read_more">Прочети още...</a>
+		</div>
+		{/foreach}
+
+{include file="pagination.html"}
+ </div>
+{include file="sidebar.html"}
+{include file="footer.html"}

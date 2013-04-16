@@ -1,0 +1,24 @@
+﻿{include file="header.html"}
+
+<form action = "feedback.php" method = "post">
+<table>
+	<tr>
+		<td>
+			Име:<br />
+			<input type = "text" name = "name" required/><br />
+		
+			E-mail<br />
+			<input type = "email" name = "email" required/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<textarea name='message' cols='60' rows='5' required></textarea><br />
+			<input type = "submit" value = "Изпрати" name = "send"/>
+		</td>
+	</tr>
+</table>
+</form>
+</div>
+{include file="sidebar.html"}
+{include file="footer.html"} 
